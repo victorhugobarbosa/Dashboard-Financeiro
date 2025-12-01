@@ -3,7 +3,6 @@
 import TopBar from "@/components/TopBar";
 import Sidebar from "@/components/Sidebar";
 import { PieChart, TrendingUp, TrendingDown, DollarSign, Bitcoin } from "lucide-react";
-import clsx from "clsx";
 
 const assets = [
     { name: "Bitcoin", symbol: "BTC", amount: "0.45 BTC", value: "R$ 152.000,00", change: "+5.2%", trend: "up", icon: Bitcoin },
@@ -12,7 +11,7 @@ const assets = [
     { name: "Tesouro Direto", symbol: "RF", amount: "N/A", value: "R$ 35.000,00", change: "+0.9%", trend: "up", icon: Shield },
 ];
 
-function Shield(props: any) {
+function Shield(props: React.SVGProps<SVGSVGElement>) {
     return <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
 }
 
